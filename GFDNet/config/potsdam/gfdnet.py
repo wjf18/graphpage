@@ -36,11 +36,11 @@ strategy = None
 pretrained_ckpt_path =None
 resume_ckpt_path = None
 #  define the network
-net = CGGLNet(num_classes=num_classes)
+net = GFDNet(num_classes=num_classes)
 
 # define the loss
-loss = CGGLNetLoss(ignore_index=ignore_index)
-use_aux_loss = True
+loss = ModelLoss(ignore_index=ignore_index)
+use_aux_loss = False
 
 
 # define the dataloader
