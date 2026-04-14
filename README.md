@@ -4,7 +4,7 @@
 
 ## Datasets
 
-* [ISPRS Vaihingen and Potsdam](https://www.isprs.org/education/benchmarks/UrbanSemLab/default.aspx)
+* [ISPRS Vaihingen and Potsdam](https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab)
 * [WHUbuilding](https://gpcv.whu.edu.cn/data/building_dataset.html)
 
 ## Install
