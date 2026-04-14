@@ -18,7 +18,7 @@ weight_decay = 0.01
 backbone_lr = 6e-5
 backbone_weight_decay = 0.01
 accumulate_n = 1
-num_classes = 2  #
+num_classes = 1  #
 classes = CLASSES
 
 
@@ -41,7 +41,7 @@ net = GFDNet(num_classes=num_classes)
 loss = ModelLoss(ignore_index=ignore_index)
 
 
-use_aux_loss = True
+use_aux_loss = False
 
 
 train_dataset = WHUBuildingDataset(
