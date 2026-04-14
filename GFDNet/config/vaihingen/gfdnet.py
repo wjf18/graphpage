@@ -43,7 +43,7 @@ net = GFDNet(num_classes=num_classes)
 
 # define the loss
 loss =ModelLoss(ignore_index=ignore_index)
-use_aux_loss = True
+use_aux_loss = False
 
 
 # define the dataloader
