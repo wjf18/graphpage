@@ -20,7 +20,7 @@ backbone_weight_decay = 0.01
 accumulate_n = 1
 num_classes = len(CLASSES)
 classes = CLASSES
-# # 【新增】调度器参数，让它们成为 config 的一部分
+
 # scheduler_T0 = 15
 # scheduler_Tmult = 2
 
@@ -31,18 +31,18 @@ test_weights_name = "gfdnet-e105"
 log_name = 'vaihingen/{}'.format(weights_name)
 monitor = 'val_F1'
 monitor_mode = 'max'
-save_top_k = 3               # 这个参数决定了保存验证集上表现最好的 k 个模型。如果 save_top_k=1，那么只会保存一个最好的模型。
-save_last = True             # 如果设置为 True，则会保存训练结束时的最后一个 epoch 的模型，通常命名为 last.ckpt。
+save_top_k = 3               
+save_last = True            
 check_val_every_n_epoch = 1
 gpus = [0]
 strategy = None
 pretrained_ckpt_path =None
 resume_ckpt_path = None
 #  define the network
-net = CGGLNet(num_classes=num_classes)
+net = GFDNet(num_classes=num_classes)
 
 # define the loss
-loss =CGGLNetLoss(ignore_index=ignore_index)
+loss =ModelLoss(ignore_index=ignore_index)
 use_aux_loss = True
 
 
