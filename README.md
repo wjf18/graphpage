@@ -10,6 +10,9 @@
 ## Install
 
 ```
+conda create -n pyname python=3.9
+conda activate pyname
+pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118
 pip install -r GFDNet/requirements.txt
 ```
 
